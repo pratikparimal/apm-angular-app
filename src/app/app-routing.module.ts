@@ -7,10 +7,6 @@ import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.co
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {
-    path: 'products',
-    loadChildren: () => import('./products/product.module').then(m => m.ProductModule)
-  },
   {path: '**', component: PageNotFoundComponent}
 ];
 

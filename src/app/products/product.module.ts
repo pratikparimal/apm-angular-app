@@ -6,7 +6,6 @@ import { ConvertToSpacesPipe } from '../shared/convert-to-spaces.pipe';
 import { ProductListComponent } from './product-list/product-list.component';
 import { FormsModule } from '@angular/forms';
 import { ProductRoutingModule } from './product-routing.module';
-import { AppRoutingModule } from '../app-routing.module';
 
 
 @NgModule({
@@ -19,7 +18,6 @@ import { AppRoutingModule } from '../app-routing.module';
   imports: [
     CommonModule,
     FormsModule,
-    AppRoutingModule,
     ProductRoutingModule
   ]
 })

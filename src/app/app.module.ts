@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { ProductModule } from './products/product.module';
 
@@ -17,9 +16,9 @@ import { ProductModule } from './products/product.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
-    ProductModule
+    ProductModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
